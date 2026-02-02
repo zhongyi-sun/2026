@@ -126,6 +126,9 @@ class shape_coord_weight:
     def get_norm_weight(self, shapeName, weightName, rewriteShape, shapeCol=0, numCoord=10, scale=1):
             """ generate a weight file given the shape descriptor (isomap or others)
                 shapeCol defines the column to take in the shape descriptor file
+                compare to get_norm_weight_legacy above, here added the functionality to accept shapeCol
+                as a string as well as an integer as before
+                this allows the input of shape files where different columns contains various neig, algo etc
             """      
             ori_shape = pd.read_csv(shapeName, index_col=0)
             
