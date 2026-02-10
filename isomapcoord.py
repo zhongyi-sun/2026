@@ -420,6 +420,8 @@ class isomapcoord:
         Maintains bit-for-bit identity if the subject list is unchanged.
         """
         # Load with index name preservation
+        oldWeightPath = oldWeightPath.replace('\r', '').strip()
+        print(oldWeightPath)
         df_old = pd.read_csv(oldWeightPath, index_col=0)
         
         # Filter subjects
