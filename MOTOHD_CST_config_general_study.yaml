@@ -167,48 +167,48 @@ functions:
     filterOut: false
     typeIso: Cmds
     numNeig: 30            # 10 by default, change to test effect, 17 for control only  
-    typeDist: max          # max or min
-    numDim: 5      
-    numCoord: 8            # 10 or 8 or other 
+    typeDist: min          # max or min
+    numDim: 3      
+    numCoord: 10            # 10 or 8 or other 
     scale: 1 
-    projectionType: CSSyltoCST_MOTOHD    # first test CSTMOTOHD
+    projectionType: CSTtoCSTbyCSallHD    # first test CSTMOTOHD, CSSyltoCST_MOTOHD
     subjectRescale: true                # default true, if source subject set is smaller than the target subject set
                                          #           or if the weight file with the right name for MA prep doesn't exist
-    sourceRegionPath: /MOTOHD            # /test_CST_MOTOHD, Note that using generalRoot defined above to concatenate to this
+    sourceRegionPath: /test_CST_MOTOHD            # /test_CST_MOTOHD, Note that using generalRoot defined above to concatenate to this
     targetRegionPath: /test_CST_MOTOHD  # /MOTOHD, Note that using generalRoot defined above to concatenate to this
-    sourceRegion: CSSyl       # CST for CST_to_CSSyl_proj, CSSyl for CSSyl_to_CST_proj 
+    sourceRegion: CST       # CST for CST_to_CSSyl_proj, CSSyl for CSSyl_to_CST_proj 
     targetRegion: CST         # CSSyl for CST_to_CSSyl_proj, CST for CSSyl_to_CST_proj 
-    projectionDim: 5
+    projectionDim: 2
 
   callProjectionGenMA_ima:
     filterOut: false
     typeIso: Cmds
     numNeig: 30            # 10 by default, change to test effect, 17 for control only   
-    typeDist: max          # max or min
-    numDim: 5         
-    numCoord: 8            # 10 or 8 or other 
+    typeDist: min          # max or min
+    numDim: 3         
+    numCoord: 10            # 10 or 8 or other 
     scale: 1
-    projectionType: CSSyltoCST_MOTOHD    # first test CSTMOTOHD            
+    projectionType: CSTtoCSTbyCSallHD    # first test CSTMOTOHD, CSSyltoCST_MOTOHD           
     targetRegionPath:  /test_CST_MOTOHD  # /MOTOHD, Note that using generalRoot defined above to concatenate to this
     targetRegion: CST                    # CSSyl for CST_to_CSSyl_proj, CST for CSSyl_to_CST_proj 
-    projectionDim: 5
+    projectionDim: 2
 
   callProjectionGenMA_mesh:
     filterOut: false
     typeIso: Cmds
     numNeig: 30            # 10 by default, change to test effect, 17 for control only    
-    typeDist: max
-    numDim: 5
-    numCoord: 8
+    typeDist: min
+    numDim: 3
+    numCoord: 10
     scale: 1   
     smoothingFactor: 2.0  # -o default 2.0
     coordScale: 900       # -e for regulating spacing, default 500, CST 900  
     weightScale: 1        # -l                 
-    aimsThreshold: 0.01   # -t default 0.06, CST 0.3
-    projectionType: CSSyltoCST_MOTOHD    # first test CSTMOTOHD  
+    aimsThreshold: 0.3   # -t default 0.06, CST 0.3
+    projectionType: CSTtoCSTbyCSallHD    # first test CSTMOTOHD, CSSyltoCST_MOTOHD     
     targetRegionPath: /test_CST_MOTOHD  # /MOTOHD, Note that using generalRoot defined above to concatenate to this 
     targetRegion: CST                    # CSSyl for CST_to_CSSyl_proj, CST for CSSyl_to_CST_proj 
-    projectionDim: 5
+    projectionDim: 2
 ##############################################  Functionality  projection  ############################################
 
 

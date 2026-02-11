@@ -17,7 +17,7 @@ from MA_tools import MA_tools
 from MA_basic_tools import MA_basic_tools
 from general_tools import general_tools
 
-DEFAULT_CONFIG_NAME = 'config_MOTOHD_pyramidal.yaml'
+DEFAULT_CONFIG_NAME = 'MOTOHD_CST_config_general_study.yaml'
 
 import traceback                 # for cluster log
 from datetime import datetime    # for cluster log
